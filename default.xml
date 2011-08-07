@@ -12,172 +12,176 @@
   <project path="build" name="platform_build" remote="genesi" revision="gingerbread+genesi" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="platform/bionic" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
-  <project path="cts" name="platform/cts" />
-  <project path="dalvik" name="platform/dalvik" />
-  <project path="development" name="platform/development" />
-  <project path="device/common" name="device/common" />
-  <project path="device/sample" name="device/sample" />
-  <project path="external/apache-http" name="platform/external/apache-http" />
-  <project path="external/astl" name="platform/external/astl" />
-  <project path="external/bison" name="platform/external/bison" />
-  <project path="external/blktrace" name="platform/external/blktrace" />
+  <project path="bionic" name="platform_bionic" remote="genesi" revision="gingerbread+genesi" />
+  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" revision="d3271024770ddcc2fb87dd22f8280764545ab05a" />
+  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" revision="53bd9111b5ae1fc1180ec13755d9830f7cadacf5" />
+  <project path="bootable/recovery" name="platform/bootable/recovery" revision="5d6309e77f6055a9aec062dd991d071054726ebb" />
+  <project path="cts" name="platform/cts" revision="ba0d40a4e638c77938f9fd89eaddd0f8f41e631d" />
+  <project path="dalvik" name="platform/dalvik" revision="81058aaf92c188cc20273edd0275329fc304aca2"/>
+  <project path="development" name="platform/development" revision="a7f9cf48c26c8d3b4833af152379a3a41453b37d" />
+  <project path="device/common" name="device/common" revision="e80457e2c7e742065b879d27141f2027a85c1fe7" />
+  <project path="device/sample" name="device/sample" revision="e16854cd143b0c5623ab507461b028422a14d526" />
+  <project path="external/apache-http" name="platform/external/apache-http" revision="b91c5e936342afbdd58c88ac604d5dd505d0fe0c" />
+  <project path="external/astl" name="platform/external/astl" revision="c3c760978c34d5eeea1205c0bf7f27444e192a98" />
+  <project path="external/bison" name="platform/external/bison" revision="889df9c1efa7ca5de113407ab7793b57a6db677d" />
+  <project path="external/blktrace" name="platform/external/blktrace" revision="ac4461c3b3e7bcbafe5336b9478657d0fa3e08aa" />
   <project path="external/bluetooth/bluez" name="platform_external_bluez" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
-  <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
-  <project path="external/bouncycastle" name="platform/external/bouncycastle" />
-  <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project path="external/bzip2" name="platform/external/bzip2" />
-  <project path="external/chromium" name="platform/external/chromium" />
-  <project path="external/clearsilver" name="platform/external/clearsilver" />
-  <project path="external/dbus" name="platform/external/dbus" />
+  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" revision="0c01eb3a7313a580fe34044bcdc3337d067c8a15" />
+  <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" revision="ce36a6c7c5f8043c038415d8e270d55d9834008d" />
+  <project path="external/bouncycastle" name="platform/external/bouncycastle" revision="cd508cf8c2f1b68e13a8fa977fb7296f4bd78fb5" />
+  <project path="external/bsdiff" name="platform/external/bsdiff" revision="df980d633fd0bdc0b89af26630f543d91bb87e68" />
+  <project path="external/bzip2" name="platform/external/bzip2" revision="879585bbef51b4cabaac6340a95d807dca379cdc" />
+  <project path="external/chromium" name="platform/external/chromium" revision="5e43ad9465e402d595a3c960784b1effe2e9bd88" />
+  <project path="external/clearsilver" name="platform/external/clearsilver" revision="5158410ad2e8590d980147a19bf836e42332700a" />
+  <project path="external/dbus" name="platform/external/dbus" revision="4bda01d38f1ef164d76bb8e266caaabfd549ef9c" />
   <project path="external/dhcpcd" name="platform_external_dhcpcd" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/dnsmasq" name="platform/external/dnsmasq" />
-  <project path="external/dropbear" name="platform/external/dropbear" />
+  <project path="external/dnsmasq" name="platform/external/dnsmasq" revision="1b25960ebe33754410ba3c663c1c45662c779381" />
+  <project path="external/dropbear" name="platform/external/dropbear" revision="d3a3a803df8f32e9ba26758b3a9d7fbd27a3dc9c" />
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/easymock" name="platform/external/easymock" />
-  <project path="external/elfcopy" name="platform/external/elfcopy" />
-  <project path="external/elfutils" name="platform/external/elfutils" />
-  <project path="external/embunit" name="platform/external/embunit" />
-  <project path="external/emma" name="platform/external/emma" />
-  <project path="external/esd" name="platform/external/esd" />
-  <project path="external/expat" name="platform/external/expat" />
-  <project path="external/fdlibm" name="platform/external/fdlibm" />
-  <project path="external/freetype" name="platform/external/freetype" />
-  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
+  <project path="external/easymock" name="platform/external/easymock" revision="17d5eb4006c438775d8eaa7600e947e4ac090a18" />
+  <project path="external/elfcopy" name="platform/external/elfcopy" revision="62c1bed1c4505369cac2e72fbe30452a598fb690" />
+  <project path="external/elfutils" name="platform/external/elfutils" revision="84cf4183ba6f577ee01abe7f1f5a6d4b23df35a8" />
+  <project path="external/embunit" name="platform/external/embunit" revision="f5eb8b0c9abf1e9911b5c84a555bc495651595e5" />
+  <project path="external/emma" name="platform/external/emma" revision="4d37e21b7c2fa378dbf7cfe2ea57d7f5991fe6cd" />
+  <project path="external/esd" name="platform/external/esd" revision="224a67f2683a7ee997179fc5dd16115e39987b0f" />
+  <project path="external/expat" name="platform/external/expat" revision="204e2ef0e1a2c2da0087cccb0c9b618d52f1d584" />
+  <project path="external/fdlibm" name="platform/external/fdlibm" revision="26ea4299bba7c618fdf97624b39e33444410896d" />
+  <project path="external/freetype" name="platform/external/freetype" revision="aacb8e1368a883fcbc9fe64fd0e460cef9c9b20c" />
+  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" revision="b6ee08aadb580341a4d80943741b80de16a88b5d" />
   <project path="external/genext2fs" name="platform_external_genext2fs" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/giflib" name="platform/external/giflib" />
-  <project path="external/grub" name="platform/external/grub" />
-  <project path="external/gtest" name="platform/external/gtest" />
-  <project path="external/guava" name="platform/external/guava" />
-  <project path="external/icu4c" name="platform/external/icu4c" />
-  <project path="external/iproute2" name="platform/external/iproute2" />
-  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
-  <project path="external/iptables" name="platform/external/iptables" />
-  <project path="external/jdiff" name="platform/external/jdiff" />
-  <project path="external/jhead" name="platform/external/jhead" />
-  <project path="external/jpeg" name="platform/external/jpeg" />
-  <project path="external/jsr305" name="platform/external/jsr305" />
-  <project path="external/junit" name="platform/external/junit" />
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" />
-  <project path="external/libffi" name="platform/external/libffi" />
-  <project path="external/libgsm" name="platform/external/libgsm" />
-  <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
-  <project path="external/libpcap" name="platform/external/libpcap" />
-  <project path="external/libpng" name="platform/external/libpng" />
-  <project path="external/libvpx" name="platform/external/libvpx" />
-  <project path="external/libxml2" name="platform/external/libxml2" />
+  <project path="external/giflib" name="platform/external/giflib" revision="b2597268aef084202a8c349d1cc072c03c6e22eb" />
+  <project path="external/grub" name="platform/external/grub" revision="a0be411871f2e71834a2cd75dea882d732557530" />
+  <project path="external/gtest" name="platform/external/gtest" revision="75f109c3120bf78ee89124f1f21b50ea24225236" />
+  <project path="external/guava" name="platform/external/guava" revision="5fa17bce47c47d5538beaaef0e38f0576446709c" />
+  <project path="external/icu4c" name="platform/external/icu4c" revision="fa7b84a26dd6c44cb0d219ef7b2f7e258219b616" />
+  <project path="external/iproute2" name="platform/external/iproute2" revision="14740a4557728ba63348e0574507a71fa40a8bd4" />
+  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" revision="f5d0d0919f6c0b82611c1f8ad0cb6023a78b6ce0" />
+  <project path="external/iptables" name="platform/external/iptables" revision="4a820b4c41de49482adce1a4e7424ca124b6b233" />
+  <project path="external/jdiff" name="platform/external/jdiff" revision="590cef7c1b48c9c3f4556ae65fbc0065d65da54a" />
+  <project path="external/jhead" name="platform/external/jhead" revision="fd983181d9043cdf45497ace19c60fd9e4e1799c" />
+  <project path="external/jpeg" name="platform/external/jpeg" revision="46c05833c257ab46c42182cbb2ae359892d14443" />
+  <project path="external/jsr305" name="platform/external/jsr305" revision="8e937939899d5fe3a6864c7ecb9bb8632678a7c7" />
+  <project path="external/junit" name="platform/external/junit" revision="e9b8080d6d80d17729e0b7f8b1d2b573b3456cc4" />
+  <project path="external/kernel-headers" name="platform/external/kernel-headers" revision="4879d6a8f2cd33b6b725666bc8f5b48f007db2a6" />
+  <project path="external/libffi" name="platform/external/libffi" revision="5dea54fd57265ce037ac94055b9f94a45558b39e" />
+  <project path="external/libgsm" name="platform/external/libgsm" revision="5e4516958690b9a1b2c98f88eeecba3edd2dbda4" />
+  <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" revision="442bead483a0a6fd9254fc83a5ea76474c6dbbe7" />
+  <project path="external/libpcap" name="platform/external/libpcap" revision="3a7bce5dda6a8db92c9248846d0255e68c3a5b2a" />
+  <project path="external/libpng" name="platform/external/libpng" revision="4ce0ee15f268e0161438b4133936cb2826f7fd50" />
+  <project path="external/libvpx" name="platform/external/libvpx" revision="76e0247ec867fcc232fc79f21e9bf85d3c3a5a3f" />
+  <project path="external/libxml2" name="platform/external/libxml2" revision="f16b5fdc2102953f6b915472200061e17e76702b" />
   <project path="external/linux-lib" name="platform_external_linux_lib" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/mtpd" name="platform/external/mtpd" />
-  <project path="external/netcat" name="platform/external/netcat" />
-  <project path="external/netperf" name="platform/external/netperf" />
-  <project path="external/neven" name="platform/external/neven" />
-  <project path="external/nist-sip" name="platform/external/nist-sip" />
-  <project path="external/oauth" name="platform/external/oauth" />
-  <project path="external/openssl" name="platform/external/openssl" />
-  <project path="external/oprofile" name="platform/external/oprofile" />
-  <project path="external/ping" name="platform/external/ping" />
+  <project path="external/mtpd" name="platform/external/mtpd" revision="fccbc17685cd8bd43cf1c1e533c4d02f6f79d667" />
+  <project path="external/netcat" name="platform/external/netcat" revision="fc2dc55c510657073ef4235658167a878e82cefa" />
+  <project path="external/netperf" name="platform/external/netperf" revision="58ecd3b7c76263900e38921360e334a416aec362" />
+  <project path="external/neven" name="platform/external/neven" revision="7164d6ac08ab9fc1247aa29f1dafd0ef7808f0f2" />
+  <project path="external/nist-sip" name="platform/external/nist-sip" revision="618ef6b2f5a2d3c29e4a76faa5abc5ebd5fa6fe3" />
+  <project path="external/oauth" name="platform/external/oauth" revision="c76276a1d6165cfb502b06f65b1735fef0754d26" />
+  <project path="external/openssl" name="platform/external/openssl" revision="1537fcb001c4f666893aa2bdeed7880e9c6a83b2" />
+  <project path="external/oprofile" name="platform/external/oprofile" revision="041ee6ccda354960ebc1e1ccfff78685ec5326e1" />
+  <project path="external/ping" name="platform/external/ping" revision="f35ea57ab6d01badde92491274ff2d74cbe3cf01" />
   <project path="external/ppp" name="platform_external_ppp" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/proguard" name="platform/external/proguard" />
-  <project path="external/protobuf" name="platform/external/protobuf" />
+  <project path="external/proguard" name="platform/external/proguard" revision="6660cb6cb4231a03a3c02127fa5c4e7828422caa" />
+  <project path="external/protobuf" name="platform/external/protobuf" revision="3574de1ca8301e1e13d1c89f2e2a902499d6bae9" />
   <project path="external/qemu" name="platform_external_qemu" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/quake" name="platform/external/quake" />
-  <project path="external/safe-iop" name="platform/external/safe-iop" />
-  <project path="external/skia" name="platform/external/skia" />
-  <project path="external/sonivox" name="platform/external/sonivox" />
-  <project path="external/speex" name="platform/external/speex" />
+  <project path="external/quake" name="platform/external/quake" revision="9b0abf864353d47404417c1cbd8384e15be547b0" />
+  <project path="external/safe-iop" name="platform/external/safe-iop" revision="07073634e2e3aa4f518e36ed5dec3aabc549d5fb" />
+  <project path="external/skia" name="platform/external/skia" revision="b4f070ed646ef1cbb92c3eaaa073640e30954873" />
+  <project path="external/sonivox" name="platform/external/sonivox" revision="d029b2378170cfd7bb34d894482065a762a54578" />
+  <project path="external/speex" name="platform/external/speex" revision="32e4d0aa78c5879565cbcd06415fa2e344036ab5" />
   <project path="external/sqlite" name="platform_external_sqlite" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/srec" name="platform/external/srec" />
-  <project path="external/stlport" name="platform/external/stlport" />
-  <project path="external/strace" name="platform/external/strace" />
-  <project path="external/svox" name="platform/external/svox" />
-  <project path="external/tagsoup" name="platform/external/tagsoup" />
-  <project path="external/tcpdump" name="platform/external/tcpdump" />
-  <project path="external/tinyxml" name="platform/external/tinyxml" />
-  <project path="external/tremolo" name="platform/external/tremolo" />
-  <project path="external/v8" name="platform/external/v8" />
-  <project path="external/webkit" name="platform/external/webkit" />
+  <project path="external/srec" name="platform/external/srec" revision="7390035ea61b32477243d60c452664150b61f023" />
+  <project path="external/stlport" name="platform/external/stlport" revision="23d26c04304e90e94e9f7ff4dbddde644010660b" />
+  <project path="external/strace" name="platform/external/strace" revision="cfa96b379cdd6561a5cc89f2bb86ee9f4b2a3928" />
+  <project path="external/svox" name="platform/external/svox" revision="1c643c7e8c13bb758249766b04a7b605179f06fa" />
+  <project path="external/tagsoup" name="platform/external/tagsoup" revision="68c2ec9e0acdb3214b7fb91dbab8c9fab8736817" />
+  <project path="external/tcpdump" name="platform/external/tcpdump" revision="532b8f38c144da9a298260a5d8978ab9e8e3856c" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" revision="d589f7e4a51e75bd5c98a3defd8ee84d7059e86e" />
+  <project path="external/tremolo" name="platform/external/tremolo" revision="9a688754461ebfc91769b5d3c8ba5aba9fe1f376" />
+  <project path="external/v8" name="platform/external/v8" revision="6599b9dd3411791c9d89ab7efbfb4131e5664c48" />
+  <project path="external/webkit" name="platform/external/webkit" revision="591ab58df1b16eb937b3438f3af26c1b97c658fd" />
   <project path="external/wpa_supplicant" name="platform_external_wpa_supplicant" remote="genesi" revision="gingerbread+genesi" />
-  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
-  <project path="external/xmlwriter" name="platform/external/xmlwriter" />
-  <project path="external/yaffs2" name="platform/external/yaffs2" />
-  <project path="external/zlib" name="platform/external/zlib" />
+  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" revision="b2522a100c9c6688508261b04e83fa1d0bdc88ab" />
+  <project path="external/xmlwriter" name="platform/external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" />
+  <project path="external/yaffs2" name="platform/external/yaffs2" revision="0fe811d9a994dd6df8aa9852c7b9241fa9aa453b" />
+  <project path="external/zlib" name="platform/external/zlib" revision="96c70b1df1629d7f0eb8f666045bfd5eb062cebf" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="genesi" revision="gingerbread+genesi" />
-  <project path="frameworks/ex" name="platform/frameworks/ex" />
-  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
+  <project path="frameworks/ex" name="platform/frameworks/ex" revision="e0d5045a56146f0e7d8ea9e400f6eb209edceec5" />
+  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" revision="49f8fa5f480ae382f9087fde333b50072b214ad2" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" revision="e471b83f1c2d3982fae0307f37c1ca30ca7e6837" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="genesi" revision="gingerbread+genesi" />
   <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="genesi" revision="gingerbread+genesi" />
-  <project path="hardware/msm7k" name="platform/hardware/msm7k" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
+  <project path="hardware/msm7k" name="platform/hardware/msm7k" revision="39c0d4c031d479a679900cb540253f42747cb810" />
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" revision="a162c4351926285892214b0726aaf07f0631dc72" />
+  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" revision="36fb5888a17a2d1ca69c7c2e2d378127f354153b" />
   <project path="hardware/ril" name="platform_hardware_ril" remote="genesi" revision="gingerbread+genesi" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
-  <project path="libcore" name="platform/libcore" />
-  <project path="ndk" name="platform/ndk" />
-  <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
+  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" revision="468432c09856425b72214e2b6682800bf17f5b22" />
+  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" revision="b2108e34759a48a52752e188fbff5a201d45c6b1" />
+  <project path="libcore" name="platform/libcore" revision="aa2be6b82cdf3bb292076d2a614a5f5b40e63123" />
+  <project path="ndk" name="platform/ndk" revision="7a619be40e8594a961066a33b7cc9ef52f566988" />
+  <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" revision="d7ef7831aa7918b98b94d8f38e3fa8c6a5a5a7d2" />
+  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" revision="d67d40591c19d2c146dca5fbf91d76d1e7c2ab82" />
+  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" revision="5c9dde07d60f72f1955146db64039740bf3068e2" />
+  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" revision="a86dd5f232c39830741f7d699e42e400d6024ac1" />
+  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" revision="8fb42d671625a61bac013804ac4b3f410fe2111d" />
   <project path="packages/apps/Camera" name="platform_packages_apps_camera" remote="genesi" revision="gingerbread+genesi" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
-  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Email" name="platform/packages/apps/Email" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
+  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" revision="ed62f82e5efc05ff87133fad7f4051a7e0fb9788" />
+  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" revision="029df4a098bace98fabb0c98a9aa2004d7e47a3d" />
+  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" revision="ebe867ce7f9e39e4e7f74a0e9beb6e5965aa6649" />
+  <project path="packages/apps/Email" name="platform/packages/apps/Email" revision="4ff77b1e4f746aec45a7857ae3bd770173281bfa" />
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" revision="58f759f4f230527e15c25da067ca24fdba9d75b9" />
   <project path="packages/apps/Gallery3D" name="platform_packages_apps_gallery3d" remote="genesi" revision="gingerbread+genesi" />
-  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
-  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
+  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" revision="79753f3bee4b17087936543e899dc2af9a3d04b9" />
+  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" revision="f7be630c94a9a5bfd8992d5b538f81a8e894b552" />
+  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" revision="f79c36bff8c1ae0b616ebabdb144b4a7167b4406" />
   <project path="packages/apps/Music" name="platform_packages_apps_music" remote="genesi" revision="gingerbread+genesi" />
-  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
-  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
-  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
+  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" revision="1e47f1b761ffa9632d0350240617bbc7bfee735d" />
+  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" revision="29b9f0bbdc35366450f14124588e1688cc5c8f7e" />
+  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" revision="1dcdf46d93b5ea9769c85ec15f2b44d71de2e57d" />
+  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" revision="2fce3264ee56f9fff28dccb9ea908a58c5308ff3" />
+  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" revision="f31b933a8aebf07e3feb512ac650c5691c8c5e0f" />
+  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" revision="71db3d37c1aa4a764fd919e52559ceae9be65c00" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="genesi" revision="gingerbread+genesi" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform_packages_apps_soundrecorder" remote="genesi" revision="gingerbread+genesi" />
-  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
-  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
-  <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
-  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
-  <project path="packages/experimental" name="platform/packages/experimental" />
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
-  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
-  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
-  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
-  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
-  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
-  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
-  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" />
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" revision="f075eb5cefb6357aa7562a6d156bda5383ac087d" />
+  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" revision="d2f267c7ed48dc77878299e12925bc3c39db5d37" />
+  <project path="packages/apps/Tag" name="platform/packages/apps/Tag" revision="64a75623a19cc1ef79a86d2b5c040ced86f1396d" />
+  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" revision="13b6acf2174e8dc23f70def279c85d191c3fcbc1" />
+  <project path="packages/experimental" name="platform/packages/experimental" revision="504fe3ddddf722e4315b382319970b0e435af27b" />
+  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" revision="620f72ffd19395de56b165b69629994353eb106d" />
+  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" revision="27ab9d1b806f03554d2abb50de26abe7bf234336" />
+  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" revision="6b7954e2967754a77c55dc4291941978e3508259" />
+  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" revision="5123bf283e3a1147cff34d0cd493316c630a5e32" />
+  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" revision="aa7646eea23f5790791ccbfc19928d56acc2f89b" />
+  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" revision="c9d8e21bd1e6dbde3208b9475a2697081f8ced79" />
+  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" revision="9242967dc8381a514c6f5bf5f6aafc238e74cf76" />
+  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" revision="441ac7e7c05a9df81ba853664a383803be343e2a" />
+  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" revision="4886c7a0cfba5df74b213b1fc8286c6e3f2ddaa2" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_mediaprovider" remote="genesi" revision="gingerbread+genesi" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
-  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
-  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
+  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" revision="6476ea5d925e6bc1ff9d914556de8f01c5d1e1ec" />
+  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" revision="d7eb9d4b59640175877a6f53f32b6e3e3d7154e9" />
+  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" revision="583aae3ac869c35d0e45d0e6839a5225c8fc48bc" />
+  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" revision="8903aebecc4717f2b19ad7583b16684f25177a0b" />
   <project path="packages/wallpapers/MagicSmoke" name="platform_packages_wallpapers_magicsmoke" remote="genesi" revision="gingerbread+genesi" />
-  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
+  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" revision="5990d2459017ab3a404e774115ebcc2c414e3136" />
   <project path="prebuilt" name="platform_prebuilt" remote="genesi" revision="gingerbread+genesi" />
-  <project path="sdk" name="platform/sdk" revision="tools_r7" />
-  <project path="system/bluetooth" name="platform/system/bluetooth" />
+  <project path="sdk" name="platform/sdk" revision="30eb5684549ffd7ddccb9213a2ae6c92d47908f0" />
+  <project path="system/bluetooth" name="platform/system/bluetooth" revision="7dc550597f490a67c8d020c727bfbf2d9d212d42" />
   <project path="system/core" name="platform_system_core" remote="genesi" revision="gingerbread+genesi" />
   <project path="system/extras" name="platform_system_extras" remote="genesi" revision="gingerbread+genesi" />
-  <project path="system/media" name="platform/system/media" />
+  <project path="system/media" name="platform/system/media" revision="4c2bc0fd150b0164f9f387214c29143346a92e14" />
   <project path="system/netd" name="platform_system_netd" remote="genesi" revision="gingerbread+genesi" />
   <project path="system/vold" name="platform_system_vold" remote="genesi" revision="gingerbread+genesi" />
-  <project path="system/wlan/ti" name="platform/system/wlan/ti" />
+  <project path="system/wlan/ti" name="platform/system/wlan/ti" revision="3baca6cc248e0d9a852c25b214c92bc856ae03ea" />
   <project path="device/fsl" name="platform_device_fsl" remote="genesi" revision="gingerbread+genesi" />
   <project path="external/alsa-lib" name="platform_external_alsa_lib" remote="genesi" revision="gingerbread+genesi" />
   <project path="hardware/alsa_sound" name="platform_hardware_alsa_sound" remote="genesi" revision="gingerbread+genesi" />
   <project path="external/alsa-utils" name="platform_external_alsa_utils" remote="genesi" revision="gingerbread+genesi" />
   <project path="external/mtd-utils" name="platform_external_mtd_utils" remote="genesi" revision="gingerbread+genesi" />
+  <project path="hardware/mx5x" name="platform_hardware_mx5x" remote="genesi" revision="gingerbread+genesi" />
+  <project path="external/linux-firmware-imx" name="platform_external_linux_firmware_imx" remote="genesi" revision="gingerbread+genesi" />
+  <project path="external/systemtap" name="platform_external_systemtap" remote="genesi" revision="gingerbread+genesi" />
+  <project path="system/dispd" name="platform_system_dispd" remote="genesi" revision="gingerbread+genesi" />
 </manifest>
