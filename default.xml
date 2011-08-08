@@ -125,7 +125,6 @@
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" revision="a86dd5f232c39830741f7d699e42e400d6024ac1" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" revision="8fb42d671625a61bac013804ac4b3f410fe2111d" />
   <project path="packages/apps/Camera" name="platform_packages_apps_camera" remote="genesi" revision="gingerbread+genesi" />
-  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" revision="ed62f82e5efc05ff87133fad7f4051a7e0fb9788" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" revision="029df4a098bace98fabb0c98a9aa2004d7e47a3d" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" revision="ebe867ce7f9e39e4e7f74a0e9beb6e5965aa6649" />
@@ -143,7 +142,6 @@
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" revision="f31b933a8aebf07e3feb512ac650c5691c8c5e0f" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" revision="71db3d37c1aa4a764fd919e52559ceae9be65c00" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="genesi" revision="gingerbread+genesi" />
-  <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform_packages_apps_soundrecorder" remote="genesi" revision="gingerbread+genesi" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" revision="f075eb5cefb6357aa7562a6d156bda5383ac087d" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" revision="d2f267c7ed48dc77878299e12925bc3c39db5d37" />
