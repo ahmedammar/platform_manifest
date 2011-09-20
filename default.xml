@@ -12,7 +12,7 @@
   <project path="build" name="platform_build" remote="genesi" revision="gingerbread+genesi" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="platform_bionic" remote="genesi" revision="gingerbread+genesi" />
+  <project path="bionic" name="platform_bionic" remote="genesi" revision="gingerbread+genesi+gstreamer" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" revision="d3271024770ddcc2fb87dd22f8280764545ab05a" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" revision="53bd9111b5ae1fc1180ec13755d9830f7cadacf5" />
   <project path="bootable/recovery" name="platform/bootable/recovery" revision="5d6309e77f6055a9aec062dd991d071054726ebb" />
