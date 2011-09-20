@@ -105,7 +105,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" />
   <project path="external/yaffs2" name="platform/external/yaffs2" revision="0fe811d9a994dd6df8aa9852c7b9241fa9aa453b" />
   <project path="external/zlib" name="platform/external/zlib" revision="96c70b1df1629d7f0eb8f666045bfd5eb062cebf" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="genesi" revision="gingerbread+genesi" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="genesi" revision="gingerbread+genesi+gstreamer" />
   <project path="frameworks/ex" name="platform/frameworks/ex" revision="e0d5045a56146f0e7d8ea9e400f6eb209edceec5" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" revision="49f8fa5f480ae382f9087fde333b50072b214ad2" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" revision="e471b83f1c2d3982fae0307f37c1ca30ca7e6837" />
@@ -173,13 +173,30 @@
   <project path="system/netd" name="platform_system_netd" remote="genesi" revision="gingerbread+genesi" />
   <project path="system/vold" name="platform_system_vold" remote="genesi" revision="gingerbread+genesi" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" revision="3baca6cc248e0d9a852c25b214c92bc856ae03ea" />
-  <project path="device/fsl" name="platform_device_fsl" remote="genesi" revision="gingerbread+genesi" />
+  <project path="device/fsl" name="platform_device_fsl" remote="genesi" revision="gingerbread+genesi+gstreamer" />
   <project path="external/alsa-lib" name="platform_external_alsa_lib" remote="genesi" revision="gingerbread+genesi" />
   <project path="hardware/alsa_sound" name="platform_hardware_alsa_sound" remote="genesi" revision="gingerbread+genesi" />
   <project path="external/alsa-utils" name="platform_external_alsa_utils" remote="genesi" revision="gingerbread+genesi" />
   <project path="external/mtd-utils" name="platform_external_mtd_utils" remote="genesi" revision="gingerbread+genesi" />
-  <project path="hardware/mx5x" name="platform_hardware_mx5x" remote="genesi" revision="gingerbread+genesi" />
+  <project path="hardware/mx5x" name="platform_hardware_mx5x" remote="genesi" revision="gingerbread+genesi+gstreamer" />
   <project path="external/linux-firmware-imx" name="platform_external_linux_firmware_imx" remote="genesi" revision="gingerbread+genesi" />
   <project path="external/systemtap" name="platform_external_systemtap" remote="genesi" revision="gingerbread+genesi" />
   <project path="system/dispd" name="platform_system_dispd" remote="genesi" revision="gingerbread+genesi" />
+  <project path="external/gstreamer_aggregate" name="platform_external_gst" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/glib" name="platform_external_gst_glib" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/libsoup" name="platform_external_gst_libsoup" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/faad" name="platform_external_gst_faad" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/ogg" name="platform_external_gst_ogg" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/libmad" name="platform_external_gst_libmad" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/x264" name="platform_external_gst_x264" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/libid3tag" name="platform_external_gst_libid3tag" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gstreamer" name="platform_external_gst_gstreamer" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-base" name="platform_external_gst_plugins_base" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-good" name="platform_external_gst_plugins_good" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-bad" name="platform_external_gst_plugins_bad" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-ugly" name="platform_external_gst_plugins_ugly" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-fsl" name="platform_external_gst_plugins_fsl" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gnonlin" name="platform_external_gst_gnonlin" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gst-editing-services" name="platform_external_gst_editing_services" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
+  <project path="external/gstreamer_aggregate/gst-android" name="platform_external_gst_android" revision="gingerbread+genesi+gstreamer" remote="genesi"/>
 </manifest>
