@@ -77,7 +77,7 @@
   <project path="external/neven" name="platform/external/neven" revision="7164d6ac08ab9fc1247aa29f1dafd0ef7808f0f2" />
   <project path="external/nist-sip" name="platform/external/nist-sip" revision="618ef6b2f5a2d3c29e4a76faa5abc5ebd5fa6fe3" />
   <project path="external/oauth" name="platform/external/oauth" revision="c76276a1d6165cfb502b06f65b1735fef0754d26" />
-  <project path="external/openssl" name="platform/external/openssl" revision="1537fcb001c4f666893aa2bdeed7880e9c6a83b2" />
+  <project path="external/openssl" name="platform_external_openssl" remote="genesi" revision="gingerbread+genesi" />
   <project path="external/oprofile" name="platform/external/oprofile" revision="041ee6ccda354960ebc1e1ccfff78685ec5326e1" />
   <project path="external/ping" name="platform/external/ping" revision="f35ea57ab6d01badde92491274ff2d74cbe3cf01" />
   <project path="external/ppp" name="platform_external_ppp" remote="genesi" revision="gingerbread+genesi" />
