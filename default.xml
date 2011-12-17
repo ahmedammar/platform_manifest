@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
-  <default revision="refs/tags/android-4.0.1_r1.2"
+  <remote  name="aosp" fetch="https://android.googlesource.com/" />
+  <default revision="refs/tags/android-4.0.1_r1"
            remote="aosp"
            sync-j="4" />
-  <remote  name="genesi" fetch="ssh://git@github.com/" />
-  <remote  name="ahmed"  fetch="git://github.com/" />
+  <remote  name="ahmed" fetch="ssh://git@github.com/" />
+  <remote  name="genesi" fetch="git://github.com/" />
 
   <project path="build" name="platform/build">
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -25,12 +24,14 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
   <project path="device/sample" name="device/sample" />
+  <project path="device/samsung/maguro" name="device/samsung/maguro" />
+  <project path="device/samsung/tuna" name="device/samsung/tuna" />
+  <project path="device/ti/panda" name="device/ti/panda" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/android-mock" name="platform/external/android-mock" />
   <project path="external/antlr" name="platform/external/antlr" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" />
   <project path="external/apache-http" name="platform/external/apache-http" />
-  <project path="external/apache-qp" name="platform/external/apache-qp" />
   <project path="external/apache-xml" name="platform/external/apache-xml" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bison" name="platform/external/bison" />
@@ -85,14 +86,11 @@
   <project path="external/libffi" name="platform/external/libffi" />
   <project path="external/libgsm" name="platform/external/libgsm" />
   <project path="external/liblzf" name="platform/external/liblzf" />
-  <project path="external/libmtp" name="platform/external/libmtp" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
   <project path="external/libnl-headers" name="platform/external/libnl-headers" />
   <project path="external/libpcap" name="platform/external/libpcap" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="platform/external/libpng" />
-  <project path="external/libusb" name="platform/external/libusb" />
-  <project path="external/libusb-compat" name="platform/external/libusb-compat" />
   <project path="external/libvpx" name="platform/external/libvpx" />
   <project path="external/libxml2" name="platform/external/libxml2" />
   <project path="external/libxslt" name="platform/external/libxslt" />
@@ -149,29 +147,21 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
-  <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" />
   <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/support" name="platform/frameworks/support" />
-  <!-- Pretty sure we don't need many of these... but maybe the invensense?
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
-  -->
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <!-- Again, pretty sure we don't need...
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
-  -->
   <project path="hardware/ril" name="platform/hardware/ril" />
-  <!-- Again...
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
-  -->
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
@@ -201,7 +191,6 @@
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
-  <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
@@ -231,8 +220,6 @@
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
   <project path="prebuilt" name="platform/prebuilt" />
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" name="platform/system/core" />
@@ -240,15 +227,22 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
-  <!-- Efika Specific stuffs -->
-  <project path="frameworks/base" name="ahmedammar/platform_frameworks_base" remote="genesi" revision="ics" />
-  <project path="hardware/alsa_sound" name="ahmedammar/platform_hardware_alsa_sound" remote="ahmed" revision="gingerbread+genesi" />
-  <project path="hardware/mx5x" name="ahmedammar/platform_hardware_mx5x" remote="genesi" revision="ics" />
-  <project path="device/fsl" name="ahmedammar/platform_device_fsl" remote="genesi" revision="ics" />
-  <project path="external/alsa_utils" name="ahmedammar/platform_external_alsa_utils" remote="ahmed" revision="gingerbread+genesi" />
-  <project path="external/alsa-lib" name="ahmedammar/platform_external_alsa_lib" remote="ahmed" revision="gingerbread+genesi" />
-  <project path="external/amd_sources" name="ahmedammar/platform_external_amd_sources" remote="genesi" revision="ics" />
-  <project path="external/linux_lib" name="ahmedammar/platform_external_linux_lib" remote="ahmed" revision="gingerbread+genesi" />
-  <project path="external/wpa_supplicant" name="ahmedammar/platform_external_wpa_supplicant" remote="ahmed" revision="ics" />
-  <project path="kernel_imx" name="ahmedammar/linux-kernel" remote="genesi" revision="mach-reflow+android" />
+
+  <!-- Efika/Elija/Apad specifics -->
+  <!-- remote "ahmed" is a private repository -->
+  <!-- remote "genesi" is a public repository -->
+  <!-- Replace base with our own custom one (this works for 4.0.1, however 4.0.3
+       needs to be researched as there are many, many changes -->
+  <project path="frameworks/base" name="ahmedammar/platform_frameworks_base" remote="ahmed" revision="ics" />
+  <project path="hardware/alsa_sound" name="ahmedammar/platform_hardware_alsa_sound" remote="genesi" revision="ics" />
+  <project path="hardware/mx5x" name="ahmedammar/platform_hardware_mx5x" remote="ahmed" revision="ics" />
+  <project path="device/fsl" name="ahmedammar/platform_device_fsl" remote="ahmed" revision="ics" />
+  <project path="external/alsa-lib" name="ahmedammar/platform_external_alsa_lib" remote="genesi" revision="ics" />
+  <project path="external/amd-sources" name="ahmedammar/platform_external_amd_sources" remote="ahmed" revision="ics" />
+  <project path="external/linux-firmware-imx" name="ahmedammar/platform_external_linux_firmware_imx" remote="ahmed" revision="gingerbread+genesi" />
+  <project path="external/linux-lib" name="ahmedammar/platform_external_linux_lib" remote="genesi" revision="gingerbread+genesi" />
+  <!-- wpa_supplicant with awext support; replaces the default wpa_supplicant 0.5.x -->
+  <project path="external/wpa_supplicant" name="ahmedammar/platform_external_wpa_supplicant" remote="genesi" revision="ics" />
+  <project path="kernel_imx" name="ahmedammar/linux-kernel" remote="ahmed" revision="mach-reflow+android" />
+
 </manifest>
