@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".." />
+  <remote  name="aosp" fetch="https://android.googlesource.com/" />
   <default revision="refs/tags/android-4.0.3_r1"
            remote="aosp"
            sync-j="4" />
+  <remote  name="ahmed" fetch="ssh://git@github.com/" />
+  <remote  name="genesi" fetch="git://github.com/" />
 
-  <project path="build" name="platform/build">
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="platform/bionic" />
+  <!-- <project path="bionic" name="platform/bionic" /> -->
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
-  <project path="development" name="platform/development" />
+  <!-- <project path="development" name="platform/development" /> -->
   <project path="device/common" name="device/common" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
-  <project path="device/moto/common" name="device/moto/common" />
-  <project path="device/moto/stingray" name="device/moto/stingray" />
-  <project path="device/moto/wingray" name="device/moto/wingray" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo" name="device/samsung/crespo" />
-  <project path="device/samsung/crespo4g" name="device/samsung/crespo4g" />
   <project path="device/samsung/maguro" name="device/samsung/maguro" />
-  <project path="device/samsung/toro" name="device/samsung/toro" />
   <project path="device/samsung/tuna" name="device/samsung/tuna" />
   <project path="device/ti/panda" name="device/ti/panda" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -97,9 +89,8 @@
   <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="platform/external/libpng" />
   <project path="external/libvpx" name="platform/external/libvpx" />
-  <project path="external/libxml2" name="platform/external/libxml2" />
+  <!-- <project path="external/libxml2" name="platform/external/libxml2" /> -->
   <project path="external/libxslt" name="platform/external/libxslt" />
-  <project path="external/libyuv" name="platform/external/libyuv" />
   <project path="external/llvm" name="platform/external/llvm" />
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
   <project path="external/markdown" name="platform/external/markdown" />
@@ -141,21 +132,17 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="platform/external/webkit" />
+  <!-- <project path="external/webkit" name="platform/external/webkit" /> -->
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
-  <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
-  <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor" />
+  <!-- <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor" /> -->
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" />
@@ -164,8 +151,8 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
+  <!-- <project path="hardware/libhardware" name="platform/hardware/libhardware" /> -->
+  <!-- <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" /> -->
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
@@ -232,10 +219,56 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform/system/core" />
+  <!-- <project path="system/core" name="platform/system/core" /> -->
   <project path="system/extras" name="platform/system/extras" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
+  <!-- Efika/Elija/Apad specifics -->
+  <!-- remote "ahmed" is a private repository -->
+  <!-- remote "genesi" is a public repository -->
+  <!-- Replace base with our own custom one (this works for 4.0.1, however 4.0.3
+       needs to be researched as there are many, many changes -->
+  <project path="build"  name="ahmedammar/platform_build" remote="ahmed" revision="ics-4.0.3">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="bionic" name="ahmedammar/platform_bionic" remote="ahmed" revision="ics-4.0.3" />
+  <project path="development" name="ahmedammar/platform_development" remote="ahmed" revision="ics-4.0.3" />
+  <project path="frameworks/base" name="ahmedammar/platform_frameworks_base" remote="ahmed" revision="ics-4.0.3" />
+  <project path="frameworks/media/libvideoeditor" name="ahmedammar/platform_frameworks_media_libvideoeditor" remote="ahmed" revision="ics-4.0.3" />
+  <project path="hardware/alsa_sound" name="ahmedammar/platform_hardware_alsa_sound" remote="genesi" revision="ics-4.0.3" />
+  <project path="hardware/imx" name="ahmedammar/platform_hardware_imx" remote="ahmed" revision="ics-4.0.3" />
+  <project path="hardware/libhardware" name="ahmedammar/platform_hardware_libhardware" remote="ahmed" revision="ics-4.0.3" />
+  <project path="hardware/libhardware_legacy" name="ahmedammar/platform_hardware_libhardware_legacy" remote="ahmed" revision="ics-4.0.3" />
+  <project path="device/fsl" name="ahmedammar/platform_device_fsl" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/alsa-lib" name="ahmedammar/platform_external_alsa_lib" remote="genesi" revision="ics" />
+  <project path="external/amd-sources" name="ahmedammar/platform_external_amd_sources" remote="ahmed" revision="ics" />
+  <project path="external/libxml2" name="ahmedammar/platform_external_libxml2" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/linux-firmware-imx" name="ahmedammar/platform_external_linux_firmware_imx" remote="ahmed" revision="gingerbread+genesi" />
+  <project path="external/linux-lib" name="ahmedammar/platform_external_linux_lib" remote="genesi" revision="gingerbread+genesi" />
+  <project path="external/webkit" name="ahmedammar/platform_external_webkit" remote="ahmed" revision="ics-4.0.3" />
+  <!-- wpa_supplicant with awext support; replaces the default wpa_supplicant 0.5.x -->
+  <project path="external/wpa_supplicant" name="ahmedammar/platform_external_wpa_supplicant" remote="genesi" revision="ics" />
+  <project path="kernel_imx" name="ahmedammar/linux-kernel" remote="ahmed" revision="mach-reflow+android" />
+  <project path="system/core" name="ahmedammar/platform_system_core" remote="ahmed" revision="ics-4.0.3" />
+  <!-- Gstreamer for Android -->
+  <project path="external/gstreamer_aggregate" name="ahmedammar/platform_external_gst" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gst-android" name="ahmedammar/platform_external_gst_android" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/faad" name="ahmedammar/platform_external_gst_faad" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/glib" name="ahmedammar/platform_external_gst_glib" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gnonlin" name="ahmedammar/platform_external_gst_gnonlin" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/x264" name="ahmedammar/platform_external_gst_x264" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/ogg" name="ahmedammar/platform_external_gst_ogg" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/libsoup" name="ahmedammar/platform_external_gst_libsoup" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/liborc" name="ahmedammar/platform_external_gst_liborc" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/libmad" name="ahmedammar/platform_external_gst_libmad" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/libid3tag" name="ahmedammar/platform_external_gst_libid3tag" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gstreamer" name="ahmedammar/platform_external_gst_gstreamer" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gst-plugins-ugly" name="ahmedammar/platform_external_gst_plugins_ugly" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gst-plugins-good" name="ahmedammar/platform_external_gst_plugins_good" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gst-plugins-base" name="ahmedammar/platform_external_gst_plugins_base" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gst-plugins-bad" name="ahmedammar/platform_external_gst_plugins_bad" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gst-plugins-fsl" name="ahmedammar/platform_external_gst_plugins_fsl" remote="ahmed" revision="ics-4.0.3" />
+  <project path="external/gstreamer_aggregate/gst-editing-services" name="ahmedammar/platform_external_gst_editing_services" remote="ahmed" revision="ics-4.0.3" />
 </manifest>
